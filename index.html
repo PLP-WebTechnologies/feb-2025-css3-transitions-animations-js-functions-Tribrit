@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Web Interactions Demo</title>
+  
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Advanced Web Interactions</h1>
+                <p>Demonstrating CSS3 Transitions, Animations, and JavaScript Functions</p>
+            </div>
+            <div class="theme-toggle">
+                <span>Dark Mode</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="themeToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </header>
+
+        <main>
+            <section class="dashboard">
+                <div class="card">
+                    <h2>CSS Animations</h2>
+                    <p>Experience smooth CSS transitions and animations applied to interactive elements throughout this application.</p>
+                    <div class="animation-box" id="animationBox">
+                        Click Me!
+                    </div>
+                    <button class="btn" id="toggleAnimation">Toggle Animation</button>
+                </div>
+
+                <div class="card">
+                    <h2>Local Storage</h2>
+                    <p>Your preferences are saved using localStorage and persist between sessions.</p>
+                    <div class="status-message" id="storageStatus"></div>
+                    <button class="btn" id="clearStorage">Clear My Data</button>
+                </div>
+
+                <div class="card">
+                    <h2>Interactive Elements</h2>
+                    <p>Hover over buttons and cards to see smooth transitions and subtle effects.</p>
+                    <button class="btn" id="demoButton">Demo Button</button>
+                    <div class="status-message" id="buttonStatus"></div>
+                </div>
+            </section>
+
+            <section class="preferences-form">
+                <h2>User Preferences</h2>
+                <p>Update your settings which will be saved using localStorage.</p>
+                
+                <form id="userPreferences">
+                    <div class="form-group">
+                        <label for="userName">Your Name</label>
+                        <input type="text" id="userName" placeholder="Enter your name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="userEmail">Email Address</label>
+                        <input type="email" id="userEmail" placeholder="Enter your email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="userTheme">Preferred Theme</label>
+                        <select id="userTheme">
+                            <option value="light">Light</option>
+                            <option value="dark">Dark</option>
+                            <option value="system">System Default</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn">Save Preferences</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>Web Interactions Demo &copy; 2023 | Built By Britney Trizzer</p>
+        </footer>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
